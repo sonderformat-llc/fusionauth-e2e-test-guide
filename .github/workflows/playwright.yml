@@ -31,8 +31,7 @@ jobs:
         run: npm run build --prefix "./complete-application/"
 
       - name: Run Application
-        run: npm start --prefix "./complete-application/"
-        background: true
+        run: npm start --prefix "./complete-application/" &
 
       - name: Install dependencies
         run: npm ci
