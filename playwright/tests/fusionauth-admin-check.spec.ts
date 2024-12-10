@@ -16,6 +16,10 @@ test('fusionauth-admin-check', async ({ page }) => {
   expect(await page.textContent('body')).toContain('http://localhost:3000');
   await page.locator('a[href="/admin/user/"]').click();
   await page.waitForLoadState();
+  await page.getByRole('textbox', { name: 'Search on email, name or role' }).click();
+  await page.getByRole('textbox', { name: 'Search on email, name or role' }).fill('richard');
+  await page.getByRole('button', { name: 'Search' }).click();
+  await page.waitForResponse(response => response.url().includes('ajax/user/search') && response.status() === 200);
   expect(await page.textContent('body')).toContain('richard@example.com');
   await page.getByRole('link', { name: 'Logout' }).click();
 });
