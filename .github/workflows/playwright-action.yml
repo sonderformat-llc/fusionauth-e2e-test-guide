@@ -34,4 +34,4 @@ jobs:
         run: npm start --prefix "./complete-application/" &
 
       - name: Upload Playwright results
-        uses: sonderformat-llc/c111-run-quickstart-e2e-test@v0.1.0
+        uses: sonderformat-llc/c111-run-quickstart-e2e-test@v0.1.1
