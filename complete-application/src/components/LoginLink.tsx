@@ -8,7 +8,7 @@ export default function LoginButton({ session }: { session: any }) {
       <p>
         To get started,{' '}
         <a
-          onClick={() => signIn()}
+          onClick={() => signIn('fusionauth')}
           style={{ textDecoration: 'underline', cursor: 'pointer' }}
         >
           log in or create a new account.

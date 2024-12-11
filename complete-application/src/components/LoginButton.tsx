@@ -15,7 +15,7 @@ export default function LoginButton({ session }: { session: any }) {
   }
   return (
     <>
-      <button className="button-lg" onClick={() => signIn()}>
+      <button className="button-lg" onClick={() => signIn('fusionauth')}>
         Log in
       </button>
     </>
