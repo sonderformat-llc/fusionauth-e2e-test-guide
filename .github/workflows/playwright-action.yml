@@ -38,4 +38,4 @@ jobs:
         with:
           FUSIONAUTH_ADMIN_URL: 'http://localhost:9011/admin'
           QUICKSTART_URL: 'http://localhost:3000'
-          GH_SECRET: ${{ secrets.GITHUB_TOKEN }}
+          GH_SECRET: ${{ secrets.token }}
