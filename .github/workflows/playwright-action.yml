@@ -33,8 +33,8 @@ jobs:
       - name: Run Application
         run: npm start --prefix "./complete-application/" &
 
-      - name: Upload Playwright results
-        uses: sonderformat-llc/c111-run-quickstart-e2e-test@v0.1.7
+      - name: Run Playwright Quickstart E2E Test
+        uses: sonderformat-llc/c111-run-quickstart-e2e-test@v0.1.8
         with:
           FUSIONAUTH_ADMIN_URL: 'http://localhost:9011/admin'
           QUICKSTART_URL: 'http://localhost:3000'
