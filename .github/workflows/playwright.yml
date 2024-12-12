@@ -1,9 +1,11 @@
-name: Playwright Tests on all Github Runners
+name: Playwright Tests on all Ubuntu Github Runners
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  schedule:
+    - cron: '10 6 * * 1'
 jobs:
   e2e-test:
     name: End 2 End Test
@@ -38,7 +40,7 @@ jobs:
         run: npm start --prefix "./complete-application/" &
 
       - name: Run Playwright Quickstart E2E Test
-        uses: sonderformat-llc/c111-run-quickstart-e2e-test@v0.1.15
+        uses: sonderformat-llc/run-quickstart-e2e-test@v0.1.15
         with:
           FUSIONAUTH_URL: 'http://localhost:9011'
           QUICKSTART_URL: 'http://localhost:3000'
