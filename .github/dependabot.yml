@@ -21,23 +21,6 @@ updates:
     schedule:
       interval: "daily"
 
-  # Maintain dependencies for npm in playwright
-  - package-ecosystem: "npm"
-    directory: "/playwright/"
-    schedule:
-      interval: "weekly"
-    groups:
-      prod-minor-npm-dependencies:
-        dependency-type: "production"
-        update-types:
-          - "minor"
-          - "patch"
-      dev-minor-npm-dependencies:
-        dependency-type: "development"
-        update-types:
-          - "minor"
-          - "patch"
-
   # Maintain dependencies for npm in complete-application
   - package-ecosystem: "npm"
     directory: "/complete-application/"
