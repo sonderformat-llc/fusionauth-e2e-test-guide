@@ -26,7 +26,7 @@ jobs:
           node-version: lts/*
 
       - name: Start FusionAuth
-        uses: fusionauth/fusionauth-github-action@v1
+        uses: sonderformat-llc/fusionauth-github-action@fix/working-directory-tag-bound
         with:
           FUSIONAUTH_APP_KICKSTART_DIRECTORY_PATH: kickstart
 
