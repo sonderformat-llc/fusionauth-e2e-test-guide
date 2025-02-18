@@ -41,7 +41,7 @@ jobs:
         run: npm start --prefix "./complete-application/" &
 
       - name: Run Playwright Quickstart E2E Test
-        uses: sonderformat-llc/run-quickstart-e2e-test@v0.2.1
+        uses: sonderformat-llc/run-quickstart-e2e-test@v0.2.2
         with:
           FUSIONAUTH_URL: 'http://localhost:9011'
           QUICKSTART_URL: 'http://localhost:3000'
