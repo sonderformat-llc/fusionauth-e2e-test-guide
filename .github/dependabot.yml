@@ -19,7 +19,7 @@ updates:
 
   # Maintain dependencies for Docker Compose
   - package-ecosystem: "docker-compose"
-    directory: "Samples/Quickstart/fusionauth/latest/" # Location of package manifests
+    directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
 
