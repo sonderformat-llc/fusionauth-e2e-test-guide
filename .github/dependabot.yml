@@ -3,6 +3,8 @@
 
 version: 2
 
+# Enable beta ecosystems to get updates for Docker Compose
+enable-beta-ecosystems: true
 updates:
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
@@ -15,11 +17,11 @@ updates:
       dev-github-actions:
         dependency-type: "development"
 
-  # Maintain dependencies for Docker
-  - package-ecosystem: "docker"
-    directory: "/"
+  # Maintain dependencies for Docker Compose
+  - package-ecosystem: "docker-compose"
+    directory: "Samples/Quickstart/fusionauth/latest/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "weekly"
 
   # Maintain dependencies for npm in complete-application
   - package-ecosystem: "npm"
