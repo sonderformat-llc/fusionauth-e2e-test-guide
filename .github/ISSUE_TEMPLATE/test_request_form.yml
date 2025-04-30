@@ -1,0 +1,21 @@
+name: Test Request (Form)
+description: Suggest a new feature for this THING
+title: "[Feature]: "
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new feature. Your input helps us improve the SDK!
+
+  - type: markdown
+    attributes:
+      value: |
+        #### Community guidelines
+        All issues filed in this repository must abide by the [FusionAuth community guidelines](https://fusionauth.io/community/forum/topic/1000/code-of-conduct).
+
+  - type: markdown
+    attributes:
+      value: |
+        #### How to vote
+        Please give us a thumbs up or thumbs down as a reaction to help us prioritize this feature. Feel free to comment if you have a particular need or comment on how this feature should work.
