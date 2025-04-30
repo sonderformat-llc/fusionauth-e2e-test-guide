@@ -3,3 +3,7 @@ contact_links:
   - name: Start a discussion
     url: https://github.com/sonderformat-llc/fusionauth-site
     about: We use Discussions for these reports
+
+  - name: Start another discussion
+    url: https://github.com/sonderformat-llc/fusionauth-localization
+    about: We use Discussions for these reports
