@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+
+  - name: Create FusionAuth TypeScript Client issue
+    url: https://github.com/FusionAuth/fusionauth-typescript-client/issues/new?title=Quickstart+NextJS:&body=Please+provide+a+description+with+references+to+the+different+repositories+used+e.g.+https://github.com/sonderformat-llc/quickstart-nextjs-e2e-test-prototype
+    about: We track all feature requests for TypeScript Client centrally in this template repository.
+
+  - name: Create Quickstart feature request
+    url: https://github.com/FusionAuth/fusionauth-example-template/issues/new
+    about: We track all feature requests for Quickstarts centrally in this template repository.
+
+  - name: Create FusionAuth product related issue
+    url: https://github.com/FusionAuth/fusionauth-issues
+    about: Please only use this project to report or track issues with the product itself.
