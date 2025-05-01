@@ -83,3 +83,13 @@ This will only be necessary
 ### Create a non-admin user
 
 ### Register the non-admin user to the application
+
+```mermaid
+graph TD
+    A[GitHub Test Workflow and Issue Template] 
+    A -->|Copy| B(Android SDK)
+    A -->|Copy| C(Swift SDK)
+    A -->|Copy| D(Quickstart ABC)
+    A -->|Copy| E(Quickstart DEF)
+
+```

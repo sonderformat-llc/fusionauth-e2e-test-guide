@@ -12,7 +12,7 @@ A quickstart is a guide that takes a user through a simple OAuth auth code grant
 # The TL;DR
 Here are the basic things you need to do to produce a Quickstart. Read the sections below for more detail.
 - [ ] Create a new repo named `fusionauth-quickstart-LANGUAGE-FRAMEWORK-{api,web}`
-- [ ] Copy in the `docker-compose.yml` file and `kickstart` directory from this repo
+- [ ] Copy the content of `./github-templates` into the directory of your new repo.
 - [ ] Edit `kickstart/kickstart.json`, editing the OAuth `authorizedRedirectURLs` and `logoutURL` values
 - [ ] Create a `complete-application` directory that contains a working application following [Change Bank Application](#change-bank-application) guidelines.
 - [ ] Create a README that describes how to run the application, and that links to the Quickstart documentation
