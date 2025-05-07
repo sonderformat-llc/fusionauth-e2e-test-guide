@@ -1,6 +1,8 @@
 [submodule "boilerplate-sdk"]
 	path = boilerplate-sdk
 	url = https://github.com/sonderformat-llc/fusionauth-e2e-test-boilerplate-sdk
+	branch = main
 [submodule "boilerplate-quickstart"]
 	path = boilerplate-quickstart
 	url = https://github.com/sonderformat-llc/fusionauth-e2e-test-boilerplate-quickstart
+	branch = main
