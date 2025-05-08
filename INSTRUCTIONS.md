@@ -1,9 +1,9 @@
 # Quickstart Template
-This is a template repo for creating FusionAuth quickstarts. If you're creating or modifying a quickstart, 
+This is a template repo for creating FusionAuth quickstarts. If you're creating or modifying a quickstart or sdk,
 follow these guidelines so we can maintain consistency.
 
 ## What is a Quickstart?
-A quickstart is a guide that takes a user through a simple OAuth auth code grant integration with FusionAuth. 
+A quickstart is a guide that takes a user through a simple OAuth auth code grant integration with FusionAuth.
 * It's specific to a language and/or framework
 * It uses an off-the-shelf library, SDK, or built-in support for doing the OAuth interactions
 * It has a companion example app that serves both as a working example of the integration and as the source of code snippets for the Quickstart documentation
@@ -34,14 +34,14 @@ Each example app will implement the Change Bank application, described below.
 | complete-application/ | A directory containing a fully working example application, which represents the end result of following the quickstart |
 
 ## Creating an Example App
-To create an example app, copy the files from this repository to a new repo. Use a repo name of `fusionauth-quickstart-LANGUAGE-FRAMEWORK-{web,api}` where 
+To create an example app, copy the files from this repository to a new repo. Use a repo name of `fusionauth-quickstart-LANGUAGE-FRAMEWORK-{web,api}` where
 `LANGUAGE` is the base language, and `FRAMEWORK` is the library or framework being used for OAuth interactions.
 
 For example: `fusionauth-quickstart-python-flask-web`
 
 ## Bundled FusionAuth
 Each example app contains a docker-compose.yml and a kickstart file that together stand up an instance of FusionAuth with an Application configured to work with the technology or framework that is being showcased in the Quickstart. This means using the standard port(s) and path(s) for the various OAuth handoffs.
-You'll need to edit `kickstart/kickstart.json`. Typically, you'll just need to edit the `authorizedRedirectURLs` and `logoutURL` properties 
+You'll need to edit `kickstart/kickstart.json`. Typically, you'll just need to edit the `authorizedRedirectURLs` and `logoutURL` properties
 of the application OAuth configuration.
 
 ```json
@@ -83,7 +83,7 @@ Must follow the end to end test requirements of [run-qickstart-e2e-test Action](
 
 #### Home Page
 The home page represents the logged-out view for a user. The home page has
-  * A login button that takes the user to FusionAuth's /oauth2/authorize endpoint with the necessary parameters
+* A login button that takes the user to FusionAuth's /oauth2/authorize endpoint with the necessary parameters
 
 ![Changebank home page: no logged-in user](changebank/screenshots/changebank-loggedout.png)
 
@@ -129,14 +129,14 @@ The application back end will need the following
 | /account | Yes | Takes the user to their bank account page. This page needs to be protected, so that a user needs to prove who they are before accessing a bank account. |
 
 #### Protected Endpoints
-The `/account` and `/logout` endpoints need to be protected. `/account` provides access to a bank customer's bank account, so access needs to be 
+The `/account` and `/logout` endpoints need to be protected. `/account` provides access to a bank customer's bank account, so access needs to be
 authorized. It's good practice to also secure `/logout`, since a CSRF attack could be used to force a user to unwittingly log out of the application.
 
 ## Next steps
 
 You should provide next steps for the user to explore FusionAuth more. Check the [Next Steps section](#next-steps-section) for more details.
 
-## Example 
+## Example
 
 When in doubt, you can use https://fusionauth.io/docs/quickstarts/quickstart-ruby-rails-web as an example.
 
@@ -177,21 +177,21 @@ Read the token from the cookie header (the `app.at` cookie), and then the `Autho
 
 Make sure you check the signature, audience, issuer, and expiration time. Use an asymmetric signing key. RS256 is fine.
 
-## Example 
+## Example
 
 When in doubt, you can use https://fusionauth.io/docs/quickstarts/quickstart-springboot-api as an example, except for reading from the cookie part.
 
 # Quickstart Documentation
 
-The Quickstart documentation lives in the [fusionauth-site repo](https://github.com/FusionAuth/fusionauth-site/), in the astro/src/content/quickstarts/ directory. 
+The Quickstart documentation lives in the [fusionauth-site repo](https://github.com/FusionAuth/fusionauth-site/), in the astro/src/content/quickstarts/ directory.
 Look at the other Quickstarts to get the correct front matter for your document.
 
 Create a new file named `quickstart-LANGUAGE-FLASK-{api,web}.mdx`, and add a front matter section to it. Be sure to at least
 add title, description, section, and icon items so that the Quickstart shows up at the right place in the nav, and with the right name and icon.
 
-In the Quickstart, take the reader through the building of an application. 
+In the Quickstart, take the reader through the building of an application.
 
-This should include the following sections: 
+This should include the following sections:
 
 * Intro
 * Prerequisites
@@ -201,7 +201,7 @@ This should include the following sections:
 * Customization
 * Run the application
 * Next steps
-* Troubleshooting 
+* Troubleshooting
 
 You can look at https://fusionauth.io/docs/quickstarts/quickstart-ruby-rails-web for examples of the content. We may abstract some of this out to components, but for now, copy/pasta it.
 
@@ -338,7 +338,7 @@ You can add informational callouts using the `Aside` component.
 import Aside from '/src/components/Aside.astro';
 ```
 
-With the `Aside` component, you can render `NOTE` and `TIP` callouts. a `NOTE` is rendered with a blue background, 
+With the `Aside` component, you can render `NOTE` and `TIP` callouts. a `NOTE` is rendered with a blue background,
 and a `TIP` with a green background.
 
 ```html
