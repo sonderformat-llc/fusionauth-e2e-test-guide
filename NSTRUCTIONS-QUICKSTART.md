@@ -1,6 +1,5 @@
-# Quickstart Template
-This is a template repo for creating FusionAuth quickstarts. If you're creating or modifying a quickstart or sdk,
-follow these guidelines so we can maintain consistency.
+### Please read the [README](README.md) first as it covers the files that are common for Quickstarts and SDK, this file only covers the Quickstart Related files.
+
 
 ## What is a Quickstart?
 A quickstart is a guide that takes a user through a simple OAuth auth code grant integration with FusionAuth.
@@ -8,6 +7,8 @@ A quickstart is a guide that takes a user through a simple OAuth auth code grant
 * It uses an off-the-shelf library, SDK, or built-in support for doing the OAuth interactions
 * It has a companion example app that serves both as a working example of the integration and as the source of code snippets for the Quickstart documentation
 * It's bundled with a FusionAuth `docker compose` file and a kickstart file that together get FusionAuth set up to work with the given tech stack
+
+
 
 # The TL;DR
 Here are the basic things you need to do to produce a Quickstart. Read the sections below for more detail.
