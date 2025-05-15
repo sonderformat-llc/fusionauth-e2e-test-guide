@@ -27,11 +27,10 @@ Each example app will implement the Change Bank application, described below.
 
 ## Example App Contents
 
-| Item | Description |
-| --- |---------------|
-| README.md | A description of the project, and how to run it |
-| docker-compose.yml | A docker-compose config for starting FusionAuth. The docker-compose.yml can be copied from this repository. |
-| kickstart/ | A directory containing a kickstart file for configuring FusionAuth. Copy the kickstart files from this repository and edit the kickstart.json with values specific to your Quickstart's tech |
+| Item                  | Description                                                                                                             |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------|
+| README.md             | A description of the project, and how to run it                                                                         |
+| fusionauth/latest/    | A docker-compose config for starting FusionAuth and a kickstart for configuring FusionAuth.                             |
 | complete-application/ | A directory containing a fully working example application, which represents the end result of following the quickstart |
 
 ## Creating an Example App
