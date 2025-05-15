@@ -16,9 +16,11 @@ It provides a set of APIs and libraries for building apps that interacting with 
 If the language you are using supports CodeQL please implement this workflow otherwise, delete this file.
 [About code scanning with CodeQL](https://docs.github.com/en/enterprise-cloud@latest/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
 
+
 ### .github/workflows/quality-scan.yml
 
 If your language supports linting please implement this workflow otherwise, delete this file.
+
 
 ### .github/workflows/vulnerability-scan.yml
 To ensure the security of your code, we recommend to implement a vulnerability scan.
