@@ -5,7 +5,6 @@
 A SDK is a software development kit that provides a set of tools and libraries for building applications with FusionAuth.
 It provides a set of APIs and libraries for building apps that interacting with FusionAuth
 
-'''
 
 # SDK Specific files
 
