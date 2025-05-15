@@ -37,9 +37,3 @@ Add all supported versions to the matrix.
 
 `.github/CODEOWNERS` Links to the FusionAuth community guidelines.
 
-* linting
-* codeql
-* e2e testing
-* 
-
-https://github.com/FusionAuth/fusionauth-android-sdk/ sdk bispiel kasch vo do abluege es git immer di verschidene github docs. es brucht immer codeql (dezue hets offizielli docs vo github) es brucht immer es linting je nach sproch. es brucht immer e2e tests mit latest, und fusionauth-matrix und je nach dem technologie-matrix. es brucht immer release und je nach dem e prerelease-publish und release-publish. well e2e testing verschideni versione vo fusionauth brucht gits e fusionauth folder mit de docker-compose file pro version und ein latest folder. i persönlich find das suberer als direkt im root s docker zügs drin ha also find eigentlich au für quickstart das di besser lösig, de underschid mit de SDK isch das di letste 6 monet fusionauth releases tested wird und verschideni configs brucht potenziell.
